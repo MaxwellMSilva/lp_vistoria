@@ -3,6 +3,8 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Download, Phone } from "lucide-react"
 
+import imgCarTablet from "../../../public/ChatGPT Image 17 de abr. de 2025, 08_59_58.png"
+
 export default function Hero() {
   return (
     <section id="sobre" className="py-12 md:py-16 bg-gradient-to-b from-red-100 to-white">
@@ -33,11 +35,11 @@ export default function Hero() {
           </div>
           <div className="flex-1" data-aos="fade-left">
             <Image
-              src={"/car-inspection-tablet.png"}
-              width={0}
+              src={imgCarTablet}
+              width={450}
               height={400}
               alt="Vistoria de veículos profissional"
-              className="rounded-lg shadow-xl mx-auto"
+              className="rounded-lg shadow-xl mx-auto" 
               priority
             />
           </div>

@@ -2,6 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { CheckCircle } from "lucide-react"
 
+import imgAppCarTablet from "../../../public/ChatGPT Image 17 de abr. de 2025, 09_46_25.png"
+
 export default function App() {
   return (
     <section id="aplicativo" className="py-12 md:py-16 bg-gray-50">
@@ -9,7 +11,7 @@ export default function App() {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 order-2 md:order-1" data-aos="fade-right">
             <Image
-              src="/car-inspection-app.png"
+              src={imgAppCarTablet}
               width={300}
               height={600}
               alt="Aplicativo FicEnterprise"
@@ -32,7 +34,7 @@ export default function App() {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-primary-foreground mt-0.5 flex-shrink-0" />
-                <span>Relat��rios detalhados com fotos e observações</span>
+                <span>Relatórios detalhados com fotos e observações</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-primary-foreground mt-0.5 flex-shrink-0" />
@@ -51,7 +53,7 @@ export default function App() {
               </Link>
               <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/app-store-badges.png"
+                  src={"/app-store-badges.png"}
                   width={180}
                   height={60}
                   alt="App Store"

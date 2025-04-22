@@ -12,6 +12,9 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 gap-8">
+          <SmoothScrollLink href="#inicio" className="font-medium transition-colors hover:text-red-800">
+            Início
+          </SmoothScrollLink>
           <SmoothScrollLink href="#sobre" className="font-medium transition-colors hover:text-red-800">
             Sobre
           </SmoothScrollLink>

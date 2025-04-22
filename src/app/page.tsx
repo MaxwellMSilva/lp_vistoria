@@ -1,6 +1,7 @@
 import Header from '@/components/header'
 import Footer from "@/components/footer"
 import Hero from "@/components/main/hero"
+import About from '../components/main/about'
 import Services from "@/components/main/services"
 import App from "@/components/main/app"
 import Contact from "@/components/main/contact"
@@ -13,6 +14,7 @@ export default function LandingPage() {
 
       <main className="flex-1">
         <Hero />
+        <About/>
         <Services />
         <App />
         <Contact />

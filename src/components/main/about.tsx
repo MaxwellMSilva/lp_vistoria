@@ -4,9 +4,9 @@ import imgLogo from "../../../public/ChatGPT Image 22 de abr. de 2025, 11_56_04.
 
 export default function About() {
   return (
-    <section id="sobre" className="py-12 md:py-16">
+    <section id="sobre" className="py-12 md:py-16 bg-gray-50">
       <div className="container px-4 mx-auto max-w-6xl" data-aos="fade-up">
-        <div className="flex-1 order-2 md:order-1 text-center" data-aos="fade-right">
+        <div className="flex-1 order-2 md:order-1 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Sobre a FicEnterprise</h2>
             <Image
                 src={imgLogo}

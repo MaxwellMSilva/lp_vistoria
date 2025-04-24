@@ -2,7 +2,7 @@ import { CheckCircle, Shield, Clock } from "lucide-react"
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-12 md:py-16">
+    <section id="servicos" className="py-12 md:py-16 bg-gray-50">
       <div className="container px-4 mx-auto max-w-6xl" data-aos="fade-up">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos Serviços</h2>

@@ -8,7 +8,7 @@ import imgCarTablet from "../../../public/ChatGPT Image 17 de abr. de 2025, 08_5
 
 export default function Hero() {
   return (
-    <section id="inicio" className="py-12 md:py-16 bg-gradient-to-b from-red-100 to-white">
+    <section id="inicio" className="py-12 md:py-16 bg-gradient-to-b from-red-200 to-white">
       <div className="container px-4 mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 space-y-6 text-center md:text-left">

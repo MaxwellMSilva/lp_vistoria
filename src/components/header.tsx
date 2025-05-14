@@ -8,26 +8,26 @@ export default function Header() {
       <div className="container px-4 mx-auto max-w-6xl flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Car className="h-6 w-6 text-primary-foreground"/>
-          <span className="text-xl font-bold">FicEnterprise</span>
+          <span className="text-xl font-bold">AutoVistoria</span>
         </div>
 
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 gap-8">
-          <SmoothScrollLink href="#inicio" className="font-medium transition-colors hover:text-red-800">
+          <SmoothScrollLink href="#inicio" className="font-medium transition-colors hover:text-red-700">
             Início
           </SmoothScrollLink>
-          <SmoothScrollLink href="#recursos" className="font-medium transition-colors hover:text-red-800">
+          <SmoothScrollLink href="#recursos" className="font-medium transition-colors hover:text-red-700">
             Recursos
           </SmoothScrollLink>
-          <SmoothScrollLink href="#planos" className="font-medium transition-colors hover:text-red-800">
+          <SmoothScrollLink href="#planos" className="font-medium transition-colors hover:text-red-700">
             Planos
           </SmoothScrollLink>
-          <SmoothScrollLink href="#admin" className="font-medium transition-colors hover:text-red-800">
+          <SmoothScrollLink href="#admin" className="font-medium transition-colors hover:text-red-700">
             Painel Adiminstrativo
           </SmoothScrollLink>
-          <SmoothScrollLink href="#app" className="font-medium transition-colors hover:text-red-800">
+          <SmoothScrollLink href="#app" className="font-medium transition-colors hover:text-red-700">
             Aplicativo
           </SmoothScrollLink>
-          <SmoothScrollLink href="#contato" className="font-medium transition-colors hover:text-red-800">
+          <SmoothScrollLink href="#contato" className="font-medium transition-colors hover:text-red-700">
             Contato
           </SmoothScrollLink>
         </nav>

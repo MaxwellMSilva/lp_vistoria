@@ -36,20 +36,20 @@ export default function Features() {
   ]
 
   return (
-    <section id="recursos" className="w-full py-8 md:py-16 lg:py-24 " data-aos="fade-up">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
+    <section id="recursos" className="w-full py-8 md:py-12 lg:py-16" data-aos="fade-up">
+      <div className="container mx-auto max-w-4xl px-4">
+        <div className="flex flex-col items-center justify-center space-y-3 text-center">
+          <div className="space-y-1">
             <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-red-600">Recursos</div>
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tighter md:text-4xl/tight">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
               Tudo o que você precisa para vistorias eficientes
             </h2>
-            <p className="text-muted-foreground text-sm md:text-base lg:text-lg">
-              Nossa plataforma integrada oferece todas as ferramentas necessárias para otimizar seu processo de vistoria
+            <p className="text-muted-foreground text-sm md:text-base">
+              Plataforma completa para otimizar seu processo de vistoria.
             </p>
           </div>
         </div>
-        <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8 md:mt-12">
+        <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
@@ -61,10 +61,10 @@ export default function Features() {
 
 function FeatureCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <div className="flex flex-col items-center space-y-2 rounded-lg border p-4 md:p-6 shadow-sm">
-      <div className="rounded-full bg-red-100 p-3">{icon}</div>
-      <h3 className="text-lg md:text-xl font-bold text-center">{title}</h3>
-      <p className="text-center text-muted-foreground text-sm md:text-base">{description}</p>
+    <div className="flex flex-col items-center space-y-2 rounded-lg border p-3 shadow-sm">
+      <div className="rounded-full bg-red-100 p-2">{icon}</div>
+      <h3 className="text-base md:text-lg font-semibold text-center">{title}</h3>
+      <p className="text-center text-muted-foreground text-sm">{description}</p>
     </div>
   )
 }

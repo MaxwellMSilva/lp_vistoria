@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Car className="h-6 w-6 text-primary-foreground" />
-              <span className="text-xl font-bold">FicEnterprise</span>
+              <span className="text-xl font-bold">AutoEmpresa</span>
             </div>
             <p className="text-gray-400 mb-4">
               Soluções completas para vistoria veicular com tecnologia de ponta e atendimento personalizado.
@@ -122,14 +122,14 @@ export default function Footer() {
                 >
                   <path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" />
                 </svg>
-                <span>contato@ficenterprise.com.br</span>
+                <span>contato@autoempresa.com.br</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} FicEnterprise. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} AutoEmpresa. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

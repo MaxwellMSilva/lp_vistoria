@@ -15,13 +15,16 @@ export default function Header() {
           <SmoothScrollLink href="#inicio" className="font-medium transition-colors hover:text-red-800">
             Início
           </SmoothScrollLink>
-          <SmoothScrollLink href="#sobre" className="font-medium transition-colors hover:text-red-800">
-            Sobre
+          <SmoothScrollLink href="#recursos" className="font-medium transition-colors hover:text-red-800">
+            Recursos
           </SmoothScrollLink>
-          <SmoothScrollLink href="#servicos" className="font-medium transition-colors hover:text-red-800">
-            Serviços
+          <SmoothScrollLink href="#planos" className="font-medium transition-colors hover:text-red-800">
+            Planos
           </SmoothScrollLink>
-          <SmoothScrollLink href="#aplicativo" className="font-medium transition-colors hover:text-red-800">
+          <SmoothScrollLink href="#admin" className="font-medium transition-colors hover:text-red-800">
+            Painel Adiminstrativo
+          </SmoothScrollLink>
+          <SmoothScrollLink href="#app" className="font-medium transition-colors hover:text-red-800">
             Aplicativo
           </SmoothScrollLink>
           <SmoothScrollLink href="#contato" className="font-medium transition-colors hover:text-red-800">

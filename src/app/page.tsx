@@ -1,11 +1,12 @@
 import Header from '@/components/header'
 import Footer from "@/components/footer"
 import Hero from "@/components/main/hero"
-import About from '../components/main/about'
-import Services from "@/components/main/services"
 import App from "@/components/main/app"
 import Contact from "@/components/main/contact"
 import WhatsAppButton from '@/components/whatsapp-button'
+import Features from '../components/main/features'
+import Pricing from '@/components/main/pricing'
+import AdminPanel from '@/components/main/admin'
 
 export default function LandingPage() {
   return (
@@ -14,8 +15,9 @@ export default function LandingPage() {
 
       <main className="flex-1">
         <Hero />
-        <About/>
-        <Services />
+        <Features/>
+        <Pricing />
+        <AdminPanel />
         <App />
         <Contact />
       </main>

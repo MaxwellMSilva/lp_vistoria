@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { ChevronRight } from "lucide-react"
 import { Download, Phone } from "lucide-react"
 
 import imgCarTablet from "../../../public/ChatGPT Image 17 de abr. de 2025, 08_59_58.png"
@@ -12,23 +13,21 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight" data-aos="fade-down">
-              Vistoria de Veículos <span className="text-primary-foreground">Rápida e Segura</span>
+              Sistema Completo de <span className="text-primary-foreground">Vistoria de Veículos</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-[600px] mx-auto md:mx-0" data-aos="fade-right">
-              A FicEnterprise oferece soluções completas para vistoria veicular com tecnologia de ponta e atendimento
-              personalizado.
+              Automatize e agilize suas vistorias com nossa plataforma integrada. Painel administrativo completo e aplicativo móvel para vistorias em campo.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link href="#aplicativo">
-                <Button className="cursor-pointer w-full sm:w-auto text-white bg-primary-foreground hover:bg-red-800" data-aos="fade-up">
-                  <Download className="mr-2 h-4 w-4 text-white"/>
-                  Baixar Aplicativo
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start" data-aos="fade-up">
+              <Link href="#planos" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-red-600 hover:bg-red-700 text-white">
+                  Ver planos
+                  <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="#contato">
-                <Button variant="outline" className="cursor-pointer w-full sm:w-auto" data-aos="fade-up">
-                  <Phone className="mr-2 h-4 w-4"/>
-                  Agendar Vistoria
+              <Link href="#demo" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full mt-2 sm:mt-0">
+                  Solicitar demonstração
                 </Button>
               </Link>
             </div>

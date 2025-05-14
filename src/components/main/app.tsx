@@ -1,68 +1,69 @@
-import Link from "next/link"
 import Image from "next/image"
-import { CheckCircle } from "lucide-react"
+import Link from "next/link"
+import { Check } from "lucide-react"
 
-import imgAppCarTablet from "../../../public/ChatGPT Image 17 de abr. de 2025, 09_46_25.png"
-import imgPlayStore from "../../../public/disponivel-google-play-badge-1.png"
-import imgAppStore from "../../../public/disponivel-na-app-store-botao-1.png"
+import imgApp from "../../../public/ChatGPT Image 17 de abr. de 2025, 09_46_25.png"
 
 export default function App() {
+  const features = [
+    "Disponível para iOS e Android",
+    "Modo offline com sincronização automática",
+    "Captura de fotos com anotações",
+    "Assinatura digital do cliente",
+    "Geolocalização automática",
+  ]
+
   return (
-    <section id="aplicativo" className="py-12 md:py-16">
-      <div className="container px-4 mx-auto max-w-6xl">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div className="flex-1 order-2 md:order-1" data-aos="fade-right">
-            <Image
-              src={imgAppCarTablet}
-              width={300}
-              height={600}
-              alt="Aplicativo FicEnterprise"
-              className="mx-auto rounded-xl shadow-xl"
-            />
-          </div>
-          <div className="flex-1 space-y-6 text-center md:text-left order-1 md:order-2" data-aos="fade-up">
-            <h2 className="text-3xl md:text-4xl font-bold">Nosso Aplicativo</h2>
-            <p className="text-lg text-muted-foreground">
-              Agende vistorias, acompanhe o status e receba relatórios diretamente no seu smartphone.
-            </p>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary-foreground mt-0.5 flex-shrink-0" />
-                <span>Agendamento rápido de vistorias em poucos cliques</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary-foreground mt-0.5 flex-shrink-0" />
-                <span>Acompanhamento em tempo real do status da vistoria</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary-foreground mt-0.5 flex-shrink-0" />
-                <span>Relatórios detalhados com fotos e observações</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary-foreground mt-0.5 flex-shrink-0" />
-                <span>Notificações sobre o andamento do processo</span>
-              </li>
+    <section id="app" className="w-full py-8 md:py-16 lg:py-24 bg-gray-100">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+          <div className="flex flex-col justify-center space-y-4 order-2 lg:order-1" data-aos="fade-up">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-red-600">Aplicativo Móvel</div>
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tighter sm:text-4xl">
+                Vistorias em qualquer lugar
+              </h2>
+              <p className="text-muted-foreground text-sm md:text-base lg:text-lg">
+                Nosso aplicativo móvel permite que você realize vistorias completas mesmo sem conexão com a internet.
+              </p>
+            </div>
+            <ul className="grid gap-2 py-4">
+              {features.map((feature, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm md:text-base">{feature}</span>
+                </li>
+              ))}
             </ul>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-              <Link href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+            <div className="flex flex-wrap gap-4">
+              <Link href="#" className="inline-block">
                 <Image
-                  src={imgPlayStore}
-                  width={180}
-                  height={60}
-                  alt="Google Play Store"
-                  className="h-[60px] w-auto"
+                  src="/app-store-badge.png"
+                  width={150}
+                  height={50}
+                  alt="Download na App Store"
+                  className="h-auto"
                 />
               </Link>
-              <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+              <Link href="#" className="inline-block">
                 <Image
-                  src={imgAppStore}
-                  width={180}
-                  height={60}
-                  alt="App Store"
-                  className="h-[60px] w-auto"
+                  src="/google-play-badge.png"
+                  width={150}
+                  height={50}
+                  alt="Download no Google Play"
+                  className="h-auto"
                 />
               </Link>
             </div>
+          </div>
+          <div className="flex justify-center order-1 lg:order-2" data-aos="fade-left">
+            <Image
+              src={imgApp}
+              width={300}
+              height={600}
+              alt="Aplicativo móvel"
+              className="rounded-lg shadow-xl max-w-full h-auto"
+            />
           </div>
         </div>
       </div>

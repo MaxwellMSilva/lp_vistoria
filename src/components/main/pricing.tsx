@@ -49,26 +49,25 @@ export default function Pricing() {
 
   return (
     <section id="planos" className="w-full py-8 md:py-12 lg:py-16 bg-gray-100" data-aos="fade-up">
-  <div className="container mx-auto max-w-4xl px-4">
-    <div className="flex flex-col items-center justify-center space-y-3 text-center">
-      <div className="space-y-1">
-        <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-red-600">Planos</div>
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-          Escolha o plano ideal para o seu negócio
-        </h2>
-        <p className="text-muted-foreground text-sm md:text-base">
-          Planos flexíveis que se adaptam à sua operação.
-        </p>
+      <div className="container mx-auto max-w-4xl px-4">
+        <div className="flex flex-col items-center justify-center space-y-3 text-center">
+          <div className="space-y-1">
+            <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-red-600">Planos</div>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
+              Escolha o plano ideal para o seu negócio
+            </h2>
+            <p className="text-muted-foreground text-sm md:text-base">
+              Planos flexíveis que se adaptam à sua operação.
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+          {plans.map((plan, index) => (
+            <PricingCard key={index} {...plan} />
+          ))}
+        </div>
       </div>
-    </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-      {plans.map((plan, index) => (
-        <PricingCard key={index} {...plan} />
-      ))}
-    </div>
-  </div>
-</section>
-
+    </section>
   )
 }
 
@@ -109,7 +108,7 @@ function PricingCard({
         </ul>
       </div>
       <div className="p-4 pt-0 mt-auto">
-        <Button className="w-full bg-red-600 hover:bg-red-700 text-white text-sm">Contratar agora</Button>
+        <Button className="cursor-pointer w-full bg-red-600 hover:bg-red-700 text-white text-sm">Contratar agora</Button>
       </div>
     </div>
   )

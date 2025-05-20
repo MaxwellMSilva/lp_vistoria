@@ -20,13 +20,13 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start" data-aos="fade-up">
               <Link href="#planos" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full bg-red-600 hover:bg-red-700 text-white">
+                <Button size="lg" className="cursor-pointer w-full bg-red-600 hover:bg-red-700 text-white">
                   Ver planos
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="#demo" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full mt-2 sm:mt-0">
+                <Button size="lg" variant="outline" className="cursor-pointer w-full mt-2 sm:mt-0">
                   Solicitar demonstração
                 </Button>
               </Link>

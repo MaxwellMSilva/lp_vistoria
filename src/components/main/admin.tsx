@@ -47,7 +47,7 @@ export default function AdminPanel() {
               ))}
             </ul>
             <div>
-              <Button className="bg-red-600 hover:bg-red-700 text-white text-sm">Agendar demonstração</Button>
+              <Button className="cursor-pointer bg-red-600 hover:bg-red-700 text-white text-sm">Agendar demonstração</Button>
             </div>
           </div>
         </div>

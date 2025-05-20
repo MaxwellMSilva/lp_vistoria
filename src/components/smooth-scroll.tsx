@@ -4,17 +4,20 @@ import type React from "react"
 import { useRouter } from "next/navigation"
 import { animate } from "framer-motion"
 
-interface SmoothScrollLinkProps {
+interface SmoothScrollLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string
   children: React.ReactNode
-  className?: string
 }
 
-export function SmoothScrollLink({ href, children, className }: SmoothScrollLinkProps) {
+export function SmoothScrollLink({ href, children, className, onClick, ...rest }: SmoothScrollLinkProps) {
   const router = useRouter()
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
+
+    if (onClick) {
+      onClick(e) // chama o onClick externo, como fechar menu mobile
+    }
 
     if (href.startsWith("#")) {
       window.history.pushState({}, "", href)
@@ -26,7 +29,6 @@ export function SmoothScrollLink({ href, children, className }: SmoothScrollLink
     if (targetElement) {
       const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY
       const startPosition = window.scrollY
-      const distance = targetPosition - startPosition
 
       animate(startPosition, targetPosition, {
         duration: 0.8,
@@ -39,7 +41,7 @@ export function SmoothScrollLink({ href, children, className }: SmoothScrollLink
   }
 
   return (
-    <a href={href} onClick={handleClick} className={className}>
+    <a href={href} onClick={handleClick} className={className} {...rest}>
       {children}
     </a>
   )

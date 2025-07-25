@@ -5,7 +5,7 @@ import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr"
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-12 md:py-16 bg-gray-50">
+    <section id="contato" className="py-12 md:py-16 ">
       <div className="container px-4 mx-auto max-w-6xl" data-aos="fade-up">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>

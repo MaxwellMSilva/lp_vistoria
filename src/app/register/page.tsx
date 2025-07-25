@@ -1,7 +1,7 @@
-import { CadastroComponent } from "@/components/register/register"
+import CadastroPage from "@/components/register/register";
 
-export default function CadastroPage() {
+export default function Cadastro() {
   return (
-    <CadastroComponent/>
+    <CadastroPage/>
   )
 }
